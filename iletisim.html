@@ -4,35 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>İletişim | İdil Ekin Yücel – Sigorta Danışmanı</title>
-
     <meta name="description"
         content="İdil Ekin Yücel ile sigorta teklifi almak, hasar danışmanlığı ve risk analizi için iletişime geçin.">
-
     <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.siten.com/">
-
 </head>
 
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">İEY<span>.</span></a>
-
             <div class="menu-icon" id="menuBtn">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Ana Sayfa</a></li>
-
                 <li><a href="iletisim.html" class="nav-btn">İletişim</a></li>
             </ul>
         </div>
@@ -54,51 +46,48 @@
                 <div class="contact-info">
                     <h3>Bana Ulaşın</h3>
                     <p>Sigorta poliçelerimizle ilgili bilgi almak için bana ulaşın.</p>
-
                     <div class="info-item">
                         <strong>📍 Adres:</strong>
-                        <p>TRMAX SİGORTA/ BAHÇEKAPI MAHALLESİ SANAYİ BULVARI ŞAŞMAZ BUSINESS PLAZA
-                            NO:18/31 ETİMESGUT / ANKARA</p>
+                        <p>TRMAX SİGORTA/ BAHÇEKAPI MAHALLESİ SANAYİ BULVARI ŞAŞMAZ BUSINESS PLAZA NO:18/31 ETİMESGUT /
+                            ANKARA</p>
                     </div>
-
                     <div class="info-item">
                         <strong>📞 Telefon:</strong>
-                        <p>+90 (5382424696)</p>
+                        <p>+90 (538 242 46 96)</p>
                     </div>
-
                     <div class="info-item">
                         <strong>✉️ E-posta:</strong>
                         <p>trmax.idilekin@gmail.com</p>
                     </div>
-
                     <div class="info-item">
                         <strong>⏰ Çalışma Saatleri:</strong>
-                        <p>Pazartesi - Cuma: 10.30:00 - 18:00</p>
+                        <p>Pazartesi - Cuma: 10:30 - 18:00</p>
                     </div>
                 </div>
 
                 <div class="contact-form-container">
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formspree.io/f/mjgegkbb" method="POST">
                         <div class="form-group">
                             <label>Adınız Soyadınız</label>
-                            <input type="text" placeholder="Örn: Ahmet Yılmaz" required>
+                            <input type="text" name="Müşteri Ad Soyad" placeholder="Örn: Ahmet Yılmaz" required>
                         </div>
                         <div class="form-group">
                             <label>E-posta Adresiniz</label>
-                            <input type="email" placeholder="ornek@mail.com" required>
+                            <input type="email" name="Müşteri Email" placeholder="ornek@mail.com" required>
                         </div>
                         <div class="form-group">
                             <label>Konu</label>
-                            <select>
-                                <option>Teklif Almak İstiyorum</option>
-                                <option>Hasar Danışmanlığı</option>
-                                <option>Poliçe İnceleme</option>
-                                <option>Diğer</option>
+                            <select name="Konu">
+                                <option value="Teklif Talebi">Teklif Almak İstiyorum</option>
+                                <option value="Hasar Danışmanlığı">Hasar Danışmanlığı</option>
+                                <option value="Poliçe İnceleme">Poliçe İnceleme</option>
+                                <option value="Diğer">Diğer</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Mesajınız</label>
-                            <textarea rows="5" placeholder="Size nasıl yardımcı olabilirim?"></textarea>
+                            <textarea name="Mesaj" rows="5" placeholder="Size nasıl yardımcı olabilirim?"
+                                required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Mesajı Gönder</button>
                     </form>
@@ -110,7 +99,7 @@
 
     <footer>
         <div class="mobile-sticky-bar">
-            <a href="https://wa.me/905XXXXXXXXX?text=Merhaba%20İdil%20Hanım,%20sigorta%20teklifi%20almak%20istiyorum."
+            <a href="https://wa.me/905382424696?text=Merhaba%20İdil%20Hanım,%20sigorta%20teklifi%20almak%20istiyorum."
                 target="_blank" class="mobile-cta-btn wp-btn">
                 <img src="https://cdn-icons-png.flaticon.com/16/733/733585.png" alt="wp"
                     style="width:16px; margin-right:8px;">
@@ -119,9 +108,10 @@
         </div>
         <p>&copy; 2026 İdil Ekin YÜCEL | TRMAX Sigorta Profesyonel İş Ortağı</p>
         <div class="contact-links">
-            <a href="index.html" style="color: var(--silver); text-decoration: none;">Ana Sayfaya Dön</a>
+            <a href="index.html" style="color: silver; text-decoration: none;">Ana Sayfaya Dön</a>
         </div>
     </footer>
+
     <script>
         const menuBtn = document.getElementById('menuBtn');
         const navLinks = document.getElementById('navLinks');
@@ -138,7 +128,6 @@
             });
         });
     </script>
-
 </body>
 
 </html>
